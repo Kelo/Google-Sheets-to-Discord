@@ -7,6 +7,13 @@ function onEdit(event){
   var value = event.value;
   var items = [];
 
+  // If you only want to watch a certain column
+  var column_id = 3
+  // If not the column you want to watch
+  if (column_id < event.range.getColumn() || column_id > event.range.getLastColumn ){
+      // Do nothing
+      return;
+  }
 
   if (value == undefined && oldValue == undefined){
     if (rangeNotation.includes(':')){
@@ -45,7 +52,7 @@ function onEdit(event){
         "payload": JSON.stringify({
             "content": "‌",
             "embeds": [{
-                "title": "Title Goes here",
+                "title": "TOP TEXT CHANGE THIS IN SCRIPT",
                 "color": 33023,
                 "fields": items,
                 "footer": {
