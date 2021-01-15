@@ -7,14 +7,6 @@ function onEdit(event){
   var value = event.value;
   var items = [];
 
-  // If you only want to watch a certain column
-  var column_id = 3
-  // If not the column you want to watch
-  if (column_id < event.range.getColumn() || column_id > event.range.getLastColumn ){
-      // Do nothing
-      return;
-  }
-
   if (value == undefined && oldValue == undefined){
     if (rangeNotation.includes(':')){
       reason = "Multiple Cells edited";
