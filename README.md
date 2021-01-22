@@ -1,4 +1,7 @@
 # Google-Sheets-to-Discord
+This script will notify you of changes to your google sheet through discord, using a customizable discord embed.
+
+<img src="https://user-images.githubusercontent.com/32295800/105560255-36c78180-5d0b-11eb-8042-c4325676fead.png" width="250"/>
 
 ## Setup
 1. Go to the script editor on your google sheet
