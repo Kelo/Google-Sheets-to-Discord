@@ -26,7 +26,7 @@ This addition will allow you to only be notified if edits are made in the specif
   // If you only want to watch a certain column
   var column_id = 3
   // If not the column you want to watch
-  if (column_id < event.range.getColumn() || column_id > event.range.getLastColumn ){
+  if (column_id < event.range.getColumn() || column_id > event.range.getLastColumn() ){
       // Do nothing
       return;
   }
