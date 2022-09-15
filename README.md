@@ -18,6 +18,41 @@ Make sure to edit a range to test it.
 # Additional Options
 This section will showcase different options that you can implement to customize your embeds and program behaviour.
 
+## Forums Support
+With the addition of Discord's new [Forum channels](https://discord.com/blog/forum-channels-space-for-organized-conversation), there is the ability to direct your google form responses into individual threads or the same singular thread!
+
+
+#### New Forum channel thread for each response
+`thread_name` can be used to specify the name of the thread you want to generate.
+
+```javascript
+{
+  "thread_name" : "THREAD TITLE GOES HERE",
+  "embeds" :[{
+    "title": "TOP TEXT CHANGE THIS IN SCRIPT",
+    "fields" : items,
+    "color": 16711680
+  }]
+}
+
+```
+
+#### Same Forum channel thread for each response
+`thread_id` can be used to specify the thread you want all responses to go into.
+
+```javascript
+{
+  "thread_id" : 1234 //Your thread id goes here! ,
+  "embeds" :[{
+    "title": "TOP TEXT CHANGE THIS IN SCRIPT",
+    "fields" : items,
+    "color": 16711680
+  }]
+}
+
+```
+-----
+
 ## Program Behaviour
 
 #### Only watch a certain column
@@ -32,7 +67,7 @@ This addition will allow you to only be notified if edits are made in the specif
   }
 
 ```
-
+----
 ## Cosmetic
 In this section, we will outline the multiple different cosmetic customizations that you can add to your webhook. You can use any combination of the options displayed below.
 
